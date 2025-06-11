@@ -21,7 +21,7 @@ pipeline {
            steps {
                script {
                    dockerImage.inside {
-                        sh 'chmod +x node_modules/.bin/mocha'
+                        sh 'npm install'
                         sh 'npm test'
    }
   }
